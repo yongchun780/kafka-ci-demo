@@ -28,3 +28,6 @@ jobs:
         with:
           name: kafka-demo-jar
           path: target/*.jar
+
+      - name: 构建 Docker 镜像
+        run: docker build -t kafka-springboot-demo .
